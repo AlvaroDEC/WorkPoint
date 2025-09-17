@@ -1,0 +1,542 @@
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\obj\Debug\net9.0\WorkPoint.csproj.AssemblyReference.cache
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\obj\Debug\net9.0\WorkPoint.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\obj\Debug\net9.0\WorkPoint.AssemblyInfoInputs.cache
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\obj\Debug\net9.0\WorkPoint.AssemblyInfo.cs
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\obj\Debug\net9.0\WorkPoint.csproj.CoreCompileInputs.cache
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\obj\Debug\net9.0\WorkPoint.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\obj\Debug\net9.0\WorkPoint.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\appsettings.json
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\WorkPoint.staticwebassets.runtime.json
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\WorkPoint.staticwebassets.endpoints.json
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\WorkPoint.exe
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\WorkPoint.deps.json
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\WorkPoint.runtimeconfig.json
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\WorkPoint.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\WorkPoint.pdb
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\AutoMapper.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Humanizer.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Mono.TextTemplating.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Npgsql.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\System.CodeDom.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\System.Composition.Convention.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\System.Composition.Hosting.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\System.Composition.Runtime.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\System.Composition.TypedParts.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\System.Text.Json.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\obj\Debug\net9.0\scopedcss\bundle\WorkPoint.styles.css
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\obj\Debug\net9.0\staticwebassets\msbuild.WorkPoint.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\obj\Debug\net9.0\staticwebassets\msbuild.WorkPoint.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\obj\Debug\net9.0\staticwebassets\msbuild.build.WorkPoint.props
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.WorkPoint.props
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.WorkPoint.props
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\obj\Debug\net9.0\staticwebassets.pack.json
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\obj\Debug\net9.0\WorkPoint.csproj.Up2Date
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\obj\Debug\net9.0\WorkPoint.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\obj\Debug\net9.0\refint\WorkPoint.dll
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\obj\Debug\net9.0\WorkPoint.pdb
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\obj\Debug\net9.0\WorkPoint.genruntimeconfig.cache
+C:\Users\alvar\OneDrive\Escritorio\WorkPoint\obj\Debug\net9.0\ref\WorkPoint.dll
+D:\Proyectos de Grado\WorkPoint - copia\obj\Debug\net9.0\WorkPoint.csproj.AssemblyReference.cache
+D:\Proyectos de Grado\WorkPoint - copia\obj\Debug\net9.0\rpswa.dswa.cache.json
+D:\Proyectos de Grado\WorkPoint - copia\obj\Debug\net9.0\WorkPoint.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyectos de Grado\WorkPoint - copia\obj\Debug\net9.0\WorkPoint.AssemblyInfoInputs.cache
+D:\Proyectos de Grado\WorkPoint - copia\obj\Debug\net9.0\WorkPoint.AssemblyInfo.cs
+D:\Proyectos de Grado\WorkPoint - copia\obj\Debug\net9.0\WorkPoint.csproj.CoreCompileInputs.cache
+D:\Proyectos de Grado\WorkPoint - copia\obj\Debug\net9.0\WorkPoint.MvcApplicationPartsAssemblyInfo.cs
+D:\Proyectos de Grado\WorkPoint - copia\obj\Debug\net9.0\WorkPoint.MvcApplicationPartsAssemblyInfo.cache
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\appsettings.Development.json
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\appsettings.json
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\WorkPoint.staticwebassets.runtime.json
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\WorkPoint.staticwebassets.endpoints.json
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\WorkPoint.exe
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\WorkPoint.deps.json
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\WorkPoint.runtimeconfig.json
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\WorkPoint.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\WorkPoint.pdb
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\AutoMapper.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Humanizer.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Microsoft.OpenApi.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Mono.TextTemplating.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Npgsql.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\System.CodeDom.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\System.Composition.Convention.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\System.Composition.Hosting.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\System.Composition.Runtime.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\System.Composition.TypedParts.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Proyectos de Grado\WorkPoint - copia\obj\Debug\net9.0\rjimswa.dswa.cache.json
+D:\Proyectos de Grado\WorkPoint - copia\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+D:\Proyectos de Grado\WorkPoint - copia\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+D:\Proyectos de Grado\WorkPoint - copia\obj\Debug\net9.0\scopedcss\bundle\WorkPoint.styles.css
+D:\Proyectos de Grado\WorkPoint - copia\obj\Debug\net9.0\staticwebassets.build.json
+D:\Proyectos de Grado\WorkPoint - copia\obj\Debug\net9.0\staticwebassets.build.json.cache
+D:\Proyectos de Grado\WorkPoint - copia\obj\Debug\net9.0\staticwebassets.development.json
+D:\Proyectos de Grado\WorkPoint - copia\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+D:\Proyectos de Grado\WorkPoint - copia\obj\Debug\net9.0\WorkPoint.csproj.Up2Date
+D:\Proyectos de Grado\WorkPoint - copia\obj\Debug\net9.0\WorkPoint.dll
+D:\Proyectos de Grado\WorkPoint - copia\obj\Debug\net9.0\refint\WorkPoint.dll
+D:\Proyectos de Grado\WorkPoint - copia\obj\Debug\net9.0\WorkPoint.pdb
+D:\Proyectos de Grado\WorkPoint - copia\obj\Debug\net9.0\WorkPoint.genruntimeconfig.cache
+D:\Proyectos de Grado\WorkPoint - copia\obj\Debug\net9.0\ref\WorkPoint.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\appsettings.Development.json
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\appsettings.json
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\WorkPoint.staticwebassets.runtime.json
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\WorkPoint.staticwebassets.endpoints.json
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\WorkPoint.exe
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\WorkPoint.deps.json
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\WorkPoint.runtimeconfig.json
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\WorkPoint.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\WorkPoint.pdb
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\AutoMapper.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Humanizer.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Microsoft.OpenApi.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Mono.TextTemplating.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Npgsql.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\System.CodeDom.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\System.Composition.Convention.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\System.Composition.Hosting.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\System.Composition.Runtime.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\System.Composition.TypedParts.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\obj\Debug\net9.0\WorkPoint.csproj.AssemblyReference.cache
+D:\Proyectos de Grado\COPIAS\WorkPoint\obj\Debug\net9.0\rpswa.dswa.cache.json
+D:\Proyectos de Grado\COPIAS\WorkPoint\obj\Debug\net9.0\WorkPoint.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyectos de Grado\COPIAS\WorkPoint\obj\Debug\net9.0\WorkPoint.AssemblyInfoInputs.cache
+D:\Proyectos de Grado\COPIAS\WorkPoint\obj\Debug\net9.0\WorkPoint.AssemblyInfo.cs
+D:\Proyectos de Grado\COPIAS\WorkPoint\obj\Debug\net9.0\WorkPoint.csproj.CoreCompileInputs.cache
+D:\Proyectos de Grado\COPIAS\WorkPoint\obj\Debug\net9.0\WorkPoint.MvcApplicationPartsAssemblyInfo.cs
+D:\Proyectos de Grado\COPIAS\WorkPoint\obj\Debug\net9.0\WorkPoint.MvcApplicationPartsAssemblyInfo.cache
+D:\Proyectos de Grado\COPIAS\WorkPoint\obj\Debug\net9.0\rjimswa.dswa.cache.json
+D:\Proyectos de Grado\COPIAS\WorkPoint\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+D:\Proyectos de Grado\COPIAS\WorkPoint\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+D:\Proyectos de Grado\COPIAS\WorkPoint\obj\Debug\net9.0\scopedcss\bundle\WorkPoint.styles.css
+D:\Proyectos de Grado\COPIAS\WorkPoint\obj\Debug\net9.0\staticwebassets.build.json
+D:\Proyectos de Grado\COPIAS\WorkPoint\obj\Debug\net9.0\staticwebassets.build.json.cache
+D:\Proyectos de Grado\COPIAS\WorkPoint\obj\Debug\net9.0\staticwebassets.development.json
+D:\Proyectos de Grado\COPIAS\WorkPoint\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+D:\Proyectos de Grado\COPIAS\WorkPoint\obj\Debug\net9.0\WorkPoint.csproj.Up2Date
+D:\Proyectos de Grado\COPIAS\WorkPoint\obj\Debug\net9.0\WorkPoint.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\obj\Debug\net9.0\refint\WorkPoint.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\obj\Debug\net9.0\WorkPoint.pdb
+D:\Proyectos de Grado\COPIAS\WorkPoint\obj\Debug\net9.0\WorkPoint.genruntimeconfig.cache
+D:\Proyectos de Grado\COPIAS\WorkPoint\obj\Debug\net9.0\ref\WorkPoint.dll
+D:\Proyectos de Grado\COPIAS\WorkPoint\bin\Debug\net9.0\BCrypt.Net-Next.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\appsettings.json
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\WorkPoint.staticwebassets.runtime.json
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\WorkPoint.staticwebassets.endpoints.json
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\WorkPoint.exe
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\WorkPoint.deps.json
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\WorkPoint.runtimeconfig.json
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\WorkPoint.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\WorkPoint.pdb
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\AutoMapper.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\BCrypt.Net-Next.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Humanizer.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Microsoft.Build.Locator.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Mono.TextTemplating.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Npgsql.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\System.CodeDom.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\System.Composition.AttributedModel.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\System.Composition.Convention.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\System.Composition.Hosting.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\System.Composition.Runtime.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\System.Composition.TypedParts.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\obj\Debug\net9.0\WorkPoint.csproj.AssemblyReference.cache
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\obj\Debug\net9.0\WorkPoint.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\obj\Debug\net9.0\WorkPoint.AssemblyInfoInputs.cache
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\obj\Debug\net9.0\WorkPoint.AssemblyInfo.cs
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\obj\Debug\net9.0\WorkPoint.csproj.CoreCompileInputs.cache
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\obj\Debug\net9.0\WorkPoint.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\obj\Debug\net9.0\WorkPoint.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\obj\Debug\net9.0\scopedcss\bundle\WorkPoint.styles.css
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\obj\Debug\net9.0\WorkPoint.csproj.Up2Date
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\obj\Debug\net9.0\WorkPoint.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\obj\Debug\net9.0\refint\WorkPoint.dll
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\obj\Debug\net9.0\WorkPoint.pdb
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\obj\Debug\net9.0\WorkPoint.genruntimeconfig.cache
+C:\Users\AlvarO-DEC\Downloads\WorkPoint\obj\Debug\net9.0\ref\WorkPoint.dll

@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\alvar\\OneDrive\\Escritorio\\WorkPoint\\wwwroot\\Evidencias\\9b653e47-234a-42bc-a43f-bd75db3f328b.png",
+      "PackagePath": "staticwebassets\\Evidencias\\9b653e47-234a-42bc-a43f-bd75db3f328b.png"
+    },
+    {
+      "Id": "C:\\Users\\alvar\\OneDrive\\Escritorio\\WorkPoint\\wwwroot\\Evidencias\\cee3be9e-ecbe-4802-bc33-d1ec48f599b6.png",
+      "PackagePath": "staticwebassets\\Evidencias\\cee3be9e-ecbe-4802-bc33-d1ec48f599b6.png"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.WorkPoint.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.WorkPoint.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.WorkPoint.props",
+      "PackagePath": "build\\WorkPoint.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.WorkPoint.props",
+      "PackagePath": "buildMultiTargeting\\WorkPoint.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.WorkPoint.props",
+      "PackagePath": "buildTransitive\\WorkPoint.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
