@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3ZyvByh8/lc=",
+  "dgSpecHash": "T99FksdqoSY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\usuario\\Desktop\\BACK-BPM\\WorkPoint\\WorkPoint.csproj",
+  "projectFilePath": "C:\\Users\\usuario\\Desktop\\DEV\\WorkPoint\\WorkPoint.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\usuario\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
