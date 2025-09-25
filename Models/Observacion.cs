@@ -31,7 +31,8 @@ namespace ClaseEntityFramework.Models
         public int ProblemaId { get; set; }
         public Problema Problema { get; set; }
 
-        public DateTime FechaCreacion { get; set; } = DateTime.Now;
+        [Column(TypeName = "timestamp with time zone")]
+        public DateTime FechaCreacion { get; set; } = DateTime.UtcNow;
 
         // FK: Inspección
         [Required]

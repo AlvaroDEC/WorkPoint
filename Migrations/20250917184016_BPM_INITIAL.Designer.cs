@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace WorkPoint.Migrations
 {
     [DbContext(typeof(AppContexts))]
-    [Migration("20250908050255_BPM_INITIAL")]
+    [Migration("20250917184016_BPM_INITIAL")]
     partial class BPM_INITIAL
     {
         /// <inheritdoc />
@@ -52,7 +52,14 @@ namespace WorkPoint.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Codigo")
+                        .HasMaxLength(20)
+                        .HasColumnType("character varying(20)");
+
+                    b.Property<string>("Descripcion")
                         .HasColumnType("text");
+
+                    b.Property<bool>("Estado")
+                        .HasColumnType("boolean");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
@@ -86,17 +93,12 @@ namespace WorkPoint.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("character varying(20)");
 
-                    b.Property<int?>("RolId")
-                        .HasColumnType("integer");
-
                     b.Property<int>("UsuarioId")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
 
                     b.HasIndex("AreaId");
-
-                    b.HasIndex("RolId");
 
                     b.HasIndex("UsuarioId");
 
@@ -277,7 +279,8 @@ namespace WorkPoint.Migrations
 
                     b.Property<string>("Estado")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)");
 
                     b.Property<DateTime>("Fecha")
                         .HasColumnType("timestamp with time zone");
@@ -542,10 +545,6 @@ namespace WorkPoint.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ClaseEntityFramework.Models.Rol", null)
-                        .WithMany("Asignaciones")
-                        .HasForeignKey("RolId");
-
                     b.HasOne("ClaseEntityFramework.Models.Usuario", "Usuario")
                         .WithMany("Asignaciones")
                         .HasForeignKey("UsuarioId")
@@ -797,8 +796,6 @@ namespace WorkPoint.Migrations
 
             modelBuilder.Entity("ClaseEntityFramework.Models.Rol", b =>
                 {
-                    b.Navigation("Asignaciones");
-
                     b.Navigation("AsignacionesRoles");
 
                     b.Navigation("Permisos");

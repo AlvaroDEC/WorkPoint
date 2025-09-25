@@ -9,13 +9,15 @@ namespace ClaseEntityFramework.Models
         public int Id { get; set; }
 
         [Required]
-        public DateTime Fecha { get; set; }
+        [Column(TypeName = "timestamp with time zone")]
+        public DateTime Fecha { get; set; } = DateTime.UtcNow;
 
         [Required]
         [MaxLength(50)]
-        public string Estado { get; set; }  // "Programada", "Realizada"
+        public string Estado { get; set; } = "Programada";
 
-        public DateTime FechaCreacion { get; set; } = DateTime.Now;
+        [Column(TypeName = "timestamp with time zone")]
+        public DateTime FechaCreacion { get; set; } = DateTime.UtcNow;
 
         [Required]
         [ForeignKey(nameof(Area))]

@@ -1,6 +1,7 @@
 using AutoMapper;
 using ClaseEntityFramework.Data;
 using ClaseEntityFramework.DTOs.Estados;
+using ClaseEntityFramework.DTOs.Common;
 using ClaseEntityFramework.Models;
 using ClaseEntityFramework.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -56,6 +57,32 @@ namespace ClaseEntityFramework.Services.Implementations
 
         _context.Estados.Remove(estado);
         await _context.SaveChangesAsync();
+    }
+
+    public async Task<PagedResponse<EstadoReporteDto>> ObtenerParaReportesAsync(int pageSize)
+    {
+        var estados = await _context.Estados
+            .OrderBy(e => e.Nombre)
+            .Take(pageSize)
+            .ToListAsync();
+
+        var totalCount = await _context.Estados.CountAsync();
+
+        var estadosDto = estados.Select(e => new EstadoReporteDto
+        {
+            Id = e.Id,
+            Nombre = e.Nombre,
+            Descripcion = e.Descripcion
+        }).ToList();
+
+        return new PagedResponse<EstadoReporteDto>
+        {
+            Success = true,
+            Data = estadosDto,
+            TotalCount = totalCount,
+            PageNumber = 1,
+            PageSize = pageSize
+        };
     }
 }
 }

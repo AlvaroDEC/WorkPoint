@@ -22,7 +22,7 @@ namespace ClaseEntityFramework.Models
         [MaxLength(20)]
         public string RolEnArea { get; set; } // Inspector o Encargado
 
-        public DateTime FechaAsignacion { get; set; } = DateTime.Now;
+        public DateTime FechaAsignacion { get; set; } = DateTime.UtcNow;
         public bool Activo { get; set; } = true;
     }
 }

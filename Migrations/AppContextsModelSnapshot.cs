@@ -139,6 +139,9 @@ namespace WorkPoint.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
+                    b.Property<bool>("Activo")
+                        .HasColumnType("boolean");
+
                     b.Property<string>("Descripcion")
                         .HasColumnType("text");
 
@@ -164,9 +167,15 @@ namespace WorkPoint.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("Color")
+                        .HasColumnType("text");
+
                     b.Property<string>("Descripcion")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<int>("Nivel")
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
@@ -397,6 +406,9 @@ namespace WorkPoint.Migrations
                         .HasColumnType("integer");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Descripcion")
+                        .HasColumnType("text");
 
                     b.Property<string>("Nombre")
                         .IsRequired()

@@ -20,7 +20,8 @@ namespace ClaseEntityFramework.Models
 
         public long TamañoBytes { get; set; }
 
-        public DateTime FechaRegistro { get; set; } = DateTime.Now;
+        [Column(TypeName = "timestamp with time zone")]
+        public DateTime FechaRegistro { get; set; } = DateTime.UtcNow;
 
         // FK: Observación
         [Required]

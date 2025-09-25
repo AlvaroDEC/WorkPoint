@@ -1,6 +1,66 @@
 @WorkPoint_HostAddress = http://localhost:5097
 
-GET {{WorkPoint_HostAddress}}/weatherforecast/
+### Obtener todas las soluciones
+GET {{WorkPoint_HostAddress}}/api/Solucion
+Accept: application/json
+
+### Obtener solución por ID
+GET {{WorkPoint_HostAddress}}/api/Solucion/1
+Accept: application/json
+
+### Crear nueva solución
+POST {{WorkPoint_HostAddress}}/api/Solucion
+Content-Type: application/json
+
+{
+  "descripcion": "Implementar nuevo protocolo de seguridad",
+  "observacionId": 1,
+  "responsableId": 2,
+  "fechaImplementacion": "2024-12-31T00:00:00"
+}
+
+### Obtener soluciones por observación
+GET {{WorkPoint_HostAddress}}/api/Solucion/por-observacion/1
+Accept: application/json
+
+### Obtener soluciones por responsable
+GET {{WorkPoint_HostAddress}}/api/Solucion/por-responsable/2
+Accept: application/json
+
+### Actualizar solución
+PUT {{WorkPoint_HostAddress}}/api/Solucion
+Content-Type: application/json
+
+{
+  "id": 1,
+  "descripcion": "Solución actualizada",
+  "fechaImplementacion": "2024-12-25T00:00:00"
+}
+
+### Eliminar solución
+DELETE {{WorkPoint_HostAddress}}/api/Solucion/1
+Accept: application/json
+
+### === ENDPOINTS PARA REPORTES ===
+
+### Obtener observaciones para reportes
+GET {{WorkPoint_HostAddress}}/api/Observacion/reportes?fechaDesde=2024-01-01&fechaHasta=2024-12-31&categoriaId=1&estadoId=2&pageSize=1000
+Accept: application/json
+
+### Obtener inspecciones para reportes
+GET {{WorkPoint_HostAddress}}/api/Inspeccion/reportes?fechaDesde=2024-01-01&fechaHasta=2024-12-31&pageSize=1000
+Accept: application/json
+
+### Obtener soluciones para reportes
+GET {{WorkPoint_HostAddress}}/api/Solucion/reportes?fechaDesde=2024-01-01&fechaHasta=2024-12-31&pageSize=1000
+Accept: application/json
+
+### Obtener categorías para reportes
+GET {{WorkPoint_HostAddress}}/api/Categoria/reportes?pageSize=1000
+Accept: application/json
+
+### Obtener estados para reportes
+GET {{WorkPoint_HostAddress}}/api/Estado/reportes?pageSize=1000
 Accept: application/json
 
 ###

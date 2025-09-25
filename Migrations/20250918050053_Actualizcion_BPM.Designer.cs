@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace WorkPoint.Migrations
 {
     [DbContext(typeof(AppContexts))]
-    [Migration("20250917190947_ActualizacionToArea")]
-    partial class ActualizacionToArea
+    [Migration("20250918050053_Actualizcion_BPM")]
+    partial class Actualizcion_BPM
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -57,6 +57,9 @@ namespace WorkPoint.Migrations
 
                     b.Property<string>("Descripcion")
                         .HasColumnType("text");
+
+                    b.Property<bool>("Estado")
+                        .HasColumnType("boolean");
 
                     b.Property<string>("Nombre")
                         .IsRequired()

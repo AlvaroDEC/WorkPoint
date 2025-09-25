@@ -1,4 +1,5 @@
 using ClaseEntityFramework.DTOs.Inspecciones;
+using ClaseEntityFramework.DTOs.Common;
 
 namespace ClaseEntityFramework.Services.Interfaces
 {
@@ -9,6 +10,6 @@ namespace ClaseEntityFramework.Services.Interfaces
         Task<List<InspeccionListaDto>> ObtenerTodasAsync();
         Task ActualizarInspeccionCompletaAsync(PatchInspeccionDto dto);
         Task EliminarAsync(int id);
-
+        Task<PagedResponse<InspeccionReporteDto>> ObtenerParaReportesAsync(string? fechaDesde, string? fechaHasta, int pageSize);
     }
 }

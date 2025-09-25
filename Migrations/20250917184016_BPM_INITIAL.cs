@@ -32,7 +32,9 @@ namespace WorkPoint.Migrations
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Nombre = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
-                    Codigo = table.Column<string>(type: "text", nullable: true)
+                    Codigo = table.Column<string>(type: "character varying(20)", maxLength: 20, nullable: true),
+                    Descripcion = table.Column<string>(type: "text", nullable: true),
+                    Estado = table.Column<bool>(type: "boolean", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -188,8 +190,7 @@ namespace WorkPoint.Migrations
                     AreaId = table.Column<int>(type: "integer", nullable: false),
                     RolEnArea = table.Column<string>(type: "character varying(20)", maxLength: 20, nullable: false),
                     FechaAsignacion = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    Activo = table.Column<bool>(type: "boolean", nullable: false),
-                    RolId = table.Column<int>(type: "integer", nullable: true)
+                    Activo = table.Column<bool>(type: "boolean", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -200,11 +201,6 @@ namespace WorkPoint.Migrations
                         principalTable: "Areas",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Asignaciones_Roles_RolId",
-                        column: x => x.RolId,
-                        principalTable: "Roles",
-                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Asignaciones_Usuarios_UsuarioId",
                         column: x => x.UsuarioId,
@@ -248,7 +244,7 @@ namespace WorkPoint.Migrations
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Fecha = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    Estado = table.Column<string>(type: "text", nullable: false),
+                    Estado = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
                     FechaCreacion = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     AreaId = table.Column<int>(type: "integer", nullable: false),
                     AuditorId = table.Column<int>(type: "integer", nullable: false)
@@ -433,11 +429,6 @@ namespace WorkPoint.Migrations
                 name: "IX_Asignaciones_AreaId",
                 table: "Asignaciones",
                 column: "AreaId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Asignaciones_RolId",
-                table: "Asignaciones",
-                column: "RolId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Asignaciones_UsuarioId",

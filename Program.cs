@@ -2,6 +2,7 @@ using ClaseEntityFramework.Data;
 using ClaseEntityFramework.Services.Implementations;
 using ClaseEntityFramework.Services.Interfaces;
 using ClaseEntityFramework.Middleware;
+using ClaseEntityFramework.Mapping;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -37,11 +38,16 @@ builder.Services.AddScoped<IAsignacionRolesService, AsignacionRolesService>();
 builder.Services.AddScoped<ISeguimientoService, SeguimientoService>();
 builder.Services.AddScoped<IPermisoService, PermisoService>();
 builder.Services.AddScoped<IEvidenciaSolucionService, EvidenciaSolucionService>();
+builder.Services.AddScoped<IEvidenciaService, EvidenciaService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppContexts>(Options => {
-    Options.UseNpgsql(builder.Configuration.GetConnectionString("LocalhostConnection"));
+    Options.UseNpgsql(builder.Configuration.GetConnectionString("LocalhostConnection"), 
+        npgsqlOptions => npgsqlOptions.EnableRetryOnFailure());
+    
+    // ✅ Configurar PostgreSQL para manejar fechas UTC
+    Options.ConfigureWarnings(warnings => warnings.Ignore(Microsoft.EntityFrameworkCore.Diagnostics.RelationalEventId.MultipleCollectionIncludeWarning));
 });
 
 builder.Services.AddAutoMapper(typeof(MappingProfile));

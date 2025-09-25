@@ -9,5 +9,6 @@ namespace ClaseEntityFramework.Services.Interfaces
         Task<AccionDto> ObtenerPorId(int id);
         Task ActualizarAccion(UpdateAccionDto dto);
         Task EliminarAccion(int id);
+        Task EliminarTodasLasAcciones();
     }
 }

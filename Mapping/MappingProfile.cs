@@ -20,10 +20,12 @@ using ClaseEntityFramework.DTOs.Permisos;
 using ClaseEntityFramework.DTOs.EvidenciasSolucion;
 using ClaseEntityFramework.DTOs.Auth;
 
-public class MappingProfile : Profile
+namespace ClaseEntityFramework.Mapping
 {
-    public MappingProfile()
+    public class MappingProfile : Profile
     {
+        public MappingProfile()
+        {
         // Mapeos para la tabla "Usuario"
         CreateMap<Usuario, UsuarioDto>().ReverseMap();
         CreateMap<CreateUsuarioDto, Usuario>();
@@ -35,13 +37,21 @@ public class MappingProfile : Profile
         CreateMap<Inspeccion, InspeccionCompletaDto>().ReverseMap();
         CreateMap<CreateInspeccionDto, Inspeccion>();
         CreateMap<Inspeccion, InspeccionListaDto>();
-        CreateMap<PatchInspeccionDto, Inspeccion>();
+        CreateMap<PatchInspeccionDto, Inspeccion>()
+            .ForAllMembers(opt => opt.Condition((src, dest, srcMember) => srcMember != null));
 
         // Mapeos para la tabla "Observacion"
         CreateMap<Observacion, PatchObservacionDto>().ReverseMap();
+        CreateMap<Observacion, ObservacionListaDto>();
+        CreateMap<Observacion, ObservacionCompletaDto>();
+        CreateMap<CreateObservacionDto, Observacion>();
+        CreateMap<CreateObservacionConEvidenciaDto, Observacion>();
+        CreateMap<Observacion, ObservacionDto>();
 
         // Mapeos para la tabla "Evidencia"
         CreateMap<Evidencia, PatchEvidenciaDto>().ReverseMap();
+        CreateMap<Evidencia, EvidenciaDto>();
+        CreateMap<CreateEvidenciaDto, Evidencia>();
 
         // Mapeos para la tabla "Categoria"
         CreateMap<Categoria, CategoriaDto>().ReverseMap();
@@ -112,5 +122,13 @@ public class MappingProfile : Profile
 
         // Mapeos para Autenticación
         // Nota: LoginDto y LoginResponseDto no necesitan mapeo directo con Usuario
+
+        // Mapeos para Reportes - DTOs específicos para reportes
+        CreateMap<Categoria, CategoriaReporteDto>();
+        CreateMap<Estado, EstadoReporteDto>();
+        CreateMap<Solucion, SolucionReporteDto>();
+        CreateMap<Inspeccion, InspeccionReporteDto>();
+        CreateMap<Observacion, ObservacionReporteDto>();
+        }
     }
 }
