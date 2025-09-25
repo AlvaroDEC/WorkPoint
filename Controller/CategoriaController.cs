@@ -1,17 +1,20 @@
 using Microsoft.AspNetCore.Mvc;
 using ClaseEntityFramework.DTOs.Categorias;
+using ClaseEntityFramework.DTOs.Common;
 using ClaseEntityFramework.Services.Interfaces;
 
-[ApiController]
-[Route("api/[controller]")]
-public class CategoriaController : ControllerBase
+namespace ClaseEntityFramework.Controllers
 {
-    private readonly ICategoriaService _categoriaService;
-
-    public CategoriaController(ICategoriaService categoriaService)
+    [ApiController]
+    [Route("api/[controller]")]
+    public class CategoriaController : ControllerBase
     {
-        _categoriaService = categoriaService;
-    }
+        private readonly ICategoriaService _categoriaService;
+
+        public CategoriaController(ICategoriaService categoriaService)
+        {
+            _categoriaService = categoriaService;
+        }
 
     [HttpPost]
     public async Task<IActionResult> Crear([FromBody] CreateCategoriaDto dto)
@@ -20,11 +23,29 @@ public class CategoriaController : ControllerBase
         return Ok(new { mensaje = "Categoría creada correctamente" });
     }
     
-    [HttpGet]
-    public async Task<ActionResult<List<CategoriaDto>>> Obtener()
-    {
-        return Ok(await _categoriaService.ObtenerCategorias());
-    }
+        /// <summary>
+        /// Obtener categorías para reportes
+        /// </summary>
+        [HttpGet("reportes")]
+        public async Task<ActionResult<PagedResponse<CategoriaReporteDto>>> ObtenerParaReportes(
+            [FromQuery] int pageSize = 1000)
+        {
+            try
+            {
+                var resultado = await _categoriaService.ObtenerParaReportesAsync(pageSize);
+                return Ok(resultado);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { mensaje = ex.Message });
+            }
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<List<CategoriaDto>>> Obtener()
+        {
+            return Ok(await _categoriaService.ObtenerCategorias());
+        }
 
     [HttpGet("{id}")]
     public async Task<ActionResult<CategoriaDto>> ObtenerPorId(int id)
@@ -39,10 +60,11 @@ public class CategoriaController : ControllerBase
         return Ok(new { mensaje = "Categoría actualizada correctamente" });
     }
 
-    [HttpDelete("{id}")]
-    public async Task<IActionResult> Eliminar(int id)
-    {
-        await _categoriaService.EliminarCategoria(id);
-        return Ok(new { mensaje = "Categoría eliminada correctamente" });
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Eliminar(int id)
+        {
+            await _categoriaService.EliminarCategoria(id);
+            return Ok(new { mensaje = "Categoría eliminada correctamente" });
+        }
     }
 }

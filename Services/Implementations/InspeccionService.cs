@@ -1,5 +1,6 @@
 using AutoMapper;
 using ClaseEntityFramework.DTOs.Inspecciones;
+using ClaseEntityFramework.DTOs.Common;
 using ClaseEntityFramework.Models;
 using ClaseEntityFramework.Services.Interfaces;
 using ClaseEntityFramework.Data;
@@ -22,8 +23,10 @@ namespace ClaseEntityFramework.Services.Implementations
         public async Task<int> CrearInspeccionConObservacionesAsync(CreateInspeccionDto dto)
         {
             var inspeccion = _mapper.Map<Inspeccion>(dto);
+            // ✅ Asegurar valores por defecto
             inspeccion.Fecha = DateTime.UtcNow;
-            inspeccion.Estado = "Pendiente";
+            inspeccion.Estado = "Programada";
+            inspeccion.FechaCreacion = DateTime.UtcNow;
 
             _context.Inspecciones.Add(inspeccion);
             await _context.SaveChangesAsync();
@@ -60,6 +63,7 @@ namespace ClaseEntityFramework.Services.Implementations
                             ArchivoBase64 = ev.ArchivoBase64,
                             TipoArchivo = ev.TipoArchivo,
                             TamañoBytes = ClaseEntityFramework.Helpers.Base64Helper.CalcularTamañoBytes(ev.ArchivoBase64),
+                            FechaRegistro = DateTime.UtcNow,
                             ObservacionId = observacion.Id
                         };
                         _context.Evidencias.Add(evidencia);
@@ -131,8 +135,12 @@ namespace ClaseEntityFramework.Services.Implementations
             if (inspeccion == null)
                 throw new Exception("Inspección no encontrada");
 
-            // Actualiza campos principales usando AutoMapper
+            // Actualiza campos principales usando AutoMapper con configuración de patch
             _mapper.Map(dto, inspeccion);
+            
+            // Asegurar que la fecha sea UTC si se proporciona
+            if (dto.Fecha.HasValue)
+                inspeccion.Fecha = dto.Fecha.Value.ToUniversalTime();
 
             // Procesar observaciones si vienen
             if (dto.Observaciones != null && dto.Observaciones.Any())
@@ -198,6 +206,7 @@ namespace ClaseEntityFramework.Services.Implementations
                             {
                                 evidencia = new Evidencia
                                 {
+                                    FechaRegistro = DateTime.UtcNow,
                                     ObservacionId = observacion.Id
                                 };
                                 _context.Evidencias.Add(evidencia);
@@ -213,6 +222,12 @@ namespace ClaseEntityFramework.Services.Implementations
                         }
                     }
                 }
+            }
+
+            // Validación de seguridad: asegurar que Estado nunca sea null
+            if (string.IsNullOrWhiteSpace(inspeccion.Estado))
+            {
+                inspeccion.Estado = "Programada"; // Estado por defecto
             }
 
             await _context.SaveChangesAsync();
@@ -241,6 +256,65 @@ namespace ClaseEntityFramework.Services.Implementations
             _context.Inspecciones.Remove(inspeccion);
 
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<PagedResponse<InspeccionReporteDto>> ObtenerParaReportesAsync(string? fechaDesde, string? fechaHasta, int pageSize)
+        {
+            var query = _context.Inspecciones
+                .Include(i => i.Area)
+                .Include(i => i.Auditor)
+                .AsQueryable();
+
+            // Aplicar filtros de fecha
+            if (!string.IsNullOrEmpty(fechaDesde) && DateTime.TryParse(fechaDesde, out var fechaInicio))
+            {
+                query = query.Where(i => i.Fecha >= fechaInicio);
+            }
+
+            if (!string.IsNullOrEmpty(fechaHasta) && DateTime.TryParse(fechaHasta, out var fechaFin))
+            {
+                query = query.Where(i => i.Fecha <= fechaFin.AddDays(1).AddTicks(-1));
+            }
+
+            // Obtener total de registros
+            var totalCount = await query.CountAsync();
+
+            // Aplicar paginación
+            var inspecciones = await query
+                .OrderByDescending(i => i.Fecha)
+                .Take(pageSize)
+                .ToListAsync();
+
+            var inspeccionesDto = inspecciones.Select(i => new InspeccionReporteDto
+            {
+                Id = i.Id,
+                Fecha = i.Fecha,
+                Estado = i.Estado,
+                FechaCreacion = i.FechaCreacion,
+                AreaId = i.AreaId,
+                AuditorId = i.AuditorId,
+                NombreArea = i.Area?.Nombre ?? "Sin área",
+                NombreAuditor = i.Auditor?.NombreCompleto ?? "Sin auditor",
+                Area = i.Area != null ? new AreaReporteDto
+                {
+                    Id = i.Area.Id,
+                    Nombre = i.Area.Nombre
+                } : null,
+                Auditor = i.Auditor != null ? new AuditorReporteDto
+                {
+                    Id = i.Auditor.Id,
+                    NombreCompleto = i.Auditor.NombreCompleto
+                } : null
+            }).ToList();
+
+            return new PagedResponse<InspeccionReporteDto>
+            {
+                Success = true,
+                Data = inspeccionesDto,
+                TotalCount = totalCount,
+                PageNumber = 1,
+                PageSize = pageSize
+            };
         }
     }
 }

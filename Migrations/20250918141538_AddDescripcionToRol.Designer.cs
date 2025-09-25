@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace WorkPoint.Migrations
 {
     [DbContext(typeof(AppContexts))]
-    [Migration("20250917193407_AddEstadoToArea")]
-    partial class AddEstadoToArea
+    [Migration("20250918141538_AddDescripcionToRol")]
+    partial class AddDescripcionToRol
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -400,6 +400,9 @@ namespace WorkPoint.Migrations
                         .HasColumnType("integer");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Descripcion")
+                        .HasColumnType("text");
 
                     b.Property<string>("Nombre")
                         .IsRequired()

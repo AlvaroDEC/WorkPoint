@@ -13,6 +13,8 @@ namespace ClaseEntityFramework.Models
 
         public string Descripcion { get; set; }
 
+        public bool Activo { get; set; } = true;
+
         // Relaciones
         public ICollection<Observacion> Observaciones { get; set; }
     }

@@ -21,6 +21,9 @@ namespace ClaseEntityFramework.Services.Implementations
         public async Task CrearAsignacion(CreateAsignacionDto dto)
         {
             var asignacion = _mapper.Map<Asignacion>(dto);
+            // Asegurar que siempre use UTC y esté activo
+            asignacion.FechaAsignacion = DateTime.UtcNow;
+            asignacion.Activo = true;
             _context.Asignaciones.Add(asignacion);
             await _context.SaveChangesAsync();
         }

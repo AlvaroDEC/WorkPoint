@@ -1,4 +1,5 @@
 using ClaseEntityFramework.DTOs.Categorias;
+using ClaseEntityFramework.DTOs.Common;
 
 namespace ClaseEntityFramework.Services.Interfaces
 {
@@ -9,5 +10,6 @@ namespace ClaseEntityFramework.Services.Interfaces
         Task<CategoriaDto> ObtenerPorId(int id);
         Task ActualizarCategoria(UpdateCategoriaDto dto);
         Task EliminarCategoria(int id);
+        Task<PagedResponse<CategoriaReporteDto>> ObtenerParaReportesAsync(int pageSize);
     }
 }

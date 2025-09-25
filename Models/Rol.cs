@@ -11,7 +11,7 @@ namespace ClaseEntityFramework.Models
         [MaxLength(30)]
         public string Nombre { get; set; }
 
-        //public string Descripcion { get; set; }
+        public string Descripcion { get; set; }
 
         // Relaciones
         public ICollection<AsignacionRoles> AsignacionesRoles { get; set; }

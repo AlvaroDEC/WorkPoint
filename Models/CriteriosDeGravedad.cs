@@ -13,6 +13,10 @@ namespace ClaseEntityFramework.Models
         [Required]
         public string Descripcion { get; set; }
 
+        public int Nivel { get; set; } = 1;
+
+        public string Color { get; set; } = "#000000";
+
         // Relaciones
         public ICollection<Observacion> Observaciones { get; set; }
     }

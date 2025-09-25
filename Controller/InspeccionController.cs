@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using ClaseEntityFramework.DTOs.Inspecciones;
+using ClaseEntityFramework.DTOs.Common;
 using ClaseEntityFramework.Services.Interfaces;
 
 namespace ClaseEntityFramework.Controllers
@@ -35,6 +36,28 @@ namespace ClaseEntityFramework.Controllers
                 return NotFound(new { mensaje = ex.Message });
             }
         }
+        /// <summary>
+        /// Obtener inspecciones para reportes con filtros
+        /// </summary>
+        [HttpGet("reportes")]
+        public async Task<ActionResult<PagedResponse<InspeccionReporteDto>>> ObtenerParaReportes(
+            [FromQuery] string? fechaDesde,
+            [FromQuery] string? fechaHasta,
+            [FromQuery] int pageSize = 1000)
+        {
+            try
+            {
+                var resultado = await _inspeccionService.ObtenerParaReportesAsync(
+                    fechaDesde, fechaHasta, pageSize);
+                
+                return Ok(resultado);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { mensaje = ex.Message });
+            }
+        }
+
         [HttpGet]
         public async Task<ActionResult<List<InspeccionListaDto>>> ObtenerTodas()
         {

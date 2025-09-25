@@ -1,4 +1,5 @@
 using ClaseEntityFramework.DTOs.Estados;
+using ClaseEntityFramework.DTOs.Common;
 
 namespace ClaseEntityFramework.Services.Interfaces
 {
@@ -9,5 +10,6 @@ namespace ClaseEntityFramework.Services.Interfaces
         Task<EstadoDto> ObtenerPorId(int id);
         Task ActualizarEstado(UpdateEstadoDto dto);
         Task EliminarEstado(int id);
+        Task<PagedResponse<EstadoReporteDto>> ObtenerParaReportesAsync(int pageSize);
     }
 }

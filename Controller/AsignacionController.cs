@@ -48,16 +48,16 @@ namespace ClaseEntityFramework.Controllers
             return Ok(new { mensaje = "Asignación eliminada correctamente" });
         }
 
-        [HttpGet("por-usuario/{usuarioId}")]
-        public async Task<ActionResult<List<AsignacionDto>>> ObtenerPorUsuario(int usuarioId)
+        [HttpGet("usuario/{id}")]
+        public async Task<ActionResult<List<AsignacionDto>>> ObtenerPorUsuario(int id)
         {
-            return Ok(await _asignacionService.ObtenerAsignacionesPorUsuario(usuarioId));
+            return Ok(await _asignacionService.ObtenerAsignacionesPorUsuario(id));
         }
 
-        [HttpGet("por-area/{areaId}")]
-        public async Task<ActionResult<List<AsignacionDto>>> ObtenerPorArea(int areaId)
+        [HttpGet("area/{id}")]
+        public async Task<ActionResult<List<AsignacionDto>>> ObtenerPorArea(int id)
         {
-            return Ok(await _asignacionService.ObtenerAsignacionesPorArea(areaId));
+            return Ok(await _asignacionService.ObtenerAsignacionesPorArea(id));
         }
     }
 }

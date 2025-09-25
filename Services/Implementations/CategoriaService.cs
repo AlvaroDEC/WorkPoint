@@ -1,6 +1,7 @@
 using AutoMapper;
 using ClaseEntityFramework.Data;
 using ClaseEntityFramework.DTOs.Categorias;
+using ClaseEntityFramework.DTOs.Common;
 using ClaseEntityFramework.Models;
 using ClaseEntityFramework.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -56,6 +57,33 @@ namespace ClaseEntityFramework.Services.Implementations
 
         _context.Categorias.Remove(categoria);
         await _context.SaveChangesAsync();
+    }
+
+    public async Task<PagedResponse<CategoriaReporteDto>> ObtenerParaReportesAsync(int pageSize)
+    {
+        var categorias = await _context.Categorias
+            .OrderBy(c => c.Nombre)
+            .Take(pageSize)
+            .ToListAsync();
+
+        var totalCount = await _context.Categorias.CountAsync();
+
+        var categoriasDto = categorias.Select(c => new CategoriaReporteDto
+        {
+            Id = c.Id,
+            Nombre = c.Nombre,
+            Descripcion = c.Descripcion,
+            Activo = c.Activo
+        }).ToList();
+
+        return new PagedResponse<CategoriaReporteDto>
+        {
+            Success = true,
+            Data = categoriasDto,
+            TotalCount = totalCount,
+            PageNumber = 1,
+            PageSize = pageSize
+        };
     }
 }
 }

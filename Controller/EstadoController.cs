@@ -1,17 +1,20 @@
 using Microsoft.AspNetCore.Mvc;
 using ClaseEntityFramework.DTOs.Estados;
+using ClaseEntityFramework.DTOs.Common;
 using ClaseEntityFramework.Services.Interfaces;
 
-[ApiController]
-[Route("api/[controller]")]
-public class EstadoController : ControllerBase
+namespace ClaseEntityFramework.Controllers
 {
-    private readonly IEstadoService _estadoService;
-
-    public EstadoController(IEstadoService estadoService)
+    [ApiController]
+    [Route("api/[controller]")]
+    public class EstadoController : ControllerBase
     {
-        _estadoService = estadoService;
-    }
+        private readonly IEstadoService _estadoService;
+
+        public EstadoController(IEstadoService estadoService)
+        {
+            _estadoService = estadoService;
+        }
 
     [HttpPost]
     public async Task<IActionResult> Crear([FromBody] CreateEstadoDto dto)
@@ -20,11 +23,29 @@ public class EstadoController : ControllerBase
         return Ok(new { mensaje = "Estado creado correctamente" });
     }
     
-    [HttpGet]
-    public async Task<ActionResult<List<EstadoDto>>> Obtener()
-    {
-        return Ok(await _estadoService.ObtenerEstados());
-    }
+        /// <summary>
+        /// Obtener estados para reportes
+        /// </summary>
+        [HttpGet("reportes")]
+        public async Task<ActionResult<PagedResponse<EstadoReporteDto>>> ObtenerParaReportes(
+            [FromQuery] int pageSize = 1000)
+        {
+            try
+            {
+                var resultado = await _estadoService.ObtenerParaReportesAsync(pageSize);
+                return Ok(resultado);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { mensaje = ex.Message });
+            }
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<List<EstadoDto>>> Obtener()
+        {
+            return Ok(await _estadoService.ObtenerEstados());
+        }
 
     [HttpGet("{id}")]
     public async Task<ActionResult<EstadoDto>> ObtenerPorId(int id)
@@ -39,10 +60,11 @@ public class EstadoController : ControllerBase
         return Ok(new { mensaje = "Estado actualizado correctamente" });
     }
 
-    [HttpDelete("{id}")]
-    public async Task<IActionResult> Eliminar(int id)
-    {
-        await _estadoService.EliminarEstado(id);
-        return Ok(new { mensaje = "Estado eliminado correctamente" });
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Eliminar(int id)
+        {
+            await _estadoService.EliminarEstado(id);
+            return Ok(new { mensaje = "Estado eliminado correctamente" });
+        }
     }
 }

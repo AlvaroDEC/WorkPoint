@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using ClaseEntityFramework.Services.Interfaces;
+using ClaseEntityFramework.DTOs.Evidencias;
 
 namespace ClaseEntityFramework.Controllers
 {
@@ -6,33 +8,74 @@ namespace ClaseEntityFramework.Controllers
     [Route("api/[controller]")]
     public class EvidenciaController : ControllerBase
     {
-        private readonly IWebHostEnvironment _env;
+        private readonly IEvidenciaService _evidenciaService;
 
-        public EvidenciaController(IWebHostEnvironment env)
+        public EvidenciaController(IEvidenciaService evidenciaService)
         {
-            _env = env;
+            _evidenciaService = evidenciaService;
         }
 
         [HttpPost("upload")]
-        public async Task<IActionResult> SubirImagen(IFormFile archivo)
+        public async Task<IActionResult> SubirImagenBase64([FromBody] CreateEvidenciaDto dto)
         {
-            if (archivo == null || archivo.Length == 0)
-                return BadRequest("No se proporcionó ninguna imagen");
-
-            var carpeta = Path.Combine(_env.WebRootPath, "evidencias");
-            if (!Directory.Exists(carpeta))
-                Directory.CreateDirectory(carpeta);
-
-            var nombreArchivo = Guid.NewGuid().ToString() + Path.GetExtension(archivo.FileName);
-            var rutaCompleta = Path.Combine(carpeta, nombreArchivo);
-
-            using (var stream = new FileStream(rutaCompleta, FileMode.Create))
+            try
             {
-                await archivo.CopyToAsync(stream);
+                var id = await _evidenciaService.CrearEvidenciaAsync(dto);
+                return Ok(new { 
+                    mensaje = "Evidencia subida correctamente", 
+                    evidenciaId = id,
+                    tamañoBytes = dto.TamañoBytes
+                });
             }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { mensaje = ex.Message });
+            }
+        }
 
-            var url = $"/evidencias/{nombreArchivo}"; // Esto lo usás en rutaImagen
-            return Ok(new { ruta = url });
+        [HttpGet("{id}")]
+        public async Task<ActionResult<EvidenciaDto>> ObtenerPorId(int id)
+        {
+            try
+            {
+                var evidencia = await _evidenciaService.ObtenerPorIdAsync(id);
+                if (evidencia == null)
+                    return NotFound(new { mensaje = "Evidencia no encontrada" });
+                
+                return Ok(evidencia);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { mensaje = ex.Message });
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Eliminar(int id)
+        {
+            try
+            {
+                await _evidenciaService.EliminarAsync(id);
+                return Ok(new { mensaje = "Evidencia eliminada correctamente" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { mensaje = ex.Message });
+            }
+        }
+
+        [HttpGet("por-observacion/{observacionId}")]
+        public async Task<ActionResult<List<EvidenciaDto>>> ObtenerPorObservacion(int observacionId)
+        {
+            try
+            {
+                var evidencias = await _evidenciaService.ObtenerPorObservacionAsync(observacionId);
+                return Ok(evidencias);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { mensaje = ex.Message });
+            }
         }
     }
 }

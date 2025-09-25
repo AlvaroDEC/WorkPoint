@@ -14,6 +14,8 @@ namespace ClaseEntityFramework.DTOs.Evidencias
         [StringLength(50, ErrorMessage = "El tipo de archivo no puede exceder 50 caracteres")]
         public string TipoArchivo { get; set; }
 
+        public long TamañoBytes { get; set; }
+
         [Required(ErrorMessage = "El ID de la observación es obligatorio")]
         public int ObservacionId { get; set; }
     }
