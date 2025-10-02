@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WorkPoint")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41044c9dcd1122465c74231077d994887978febc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72877361bc9941c4a40066d1056ac912186d8ed0")]
 [assembly: System.Reflection.AssemblyProductAttribute("WorkPoint")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WorkPoint")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
