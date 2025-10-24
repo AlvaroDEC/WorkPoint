@@ -8,11 +8,9 @@ using ClaseEntityFramework.DTOs.Areas;
 using ClaseEntityFramework.DTOs.Categorias;
 using ClaseEntityFramework.DTOs.CriteriosDeGravedad;
 using ClaseEntityFramework.DTOs.Estados;
-using ClaseEntityFramework.DTOs.Problemas;
 using ClaseEntityFramework.DTOs.Acciones;
 using ClaseEntityFramework.DTOs.Roles;
 using ClaseEntityFramework.DTOs.Soluciones;
-using ClaseEntityFramework.DTOs.Sugerencias;
 using ClaseEntityFramework.DTOs.Asignaciones;
 using ClaseEntityFramework.DTOs.AsignacionRoles;
 using ClaseEntityFramework.DTOs.Seguimientos;
@@ -35,9 +33,14 @@ namespace ClaseEntityFramework.Mapping
 
         // Mapeos para la tabla "Inspeccion"
         CreateMap<Inspeccion, InspeccionCompletaDto>().ReverseMap();
-        CreateMap<CreateInspeccionDto, Inspeccion>();
+        CreateMap<CreateInspeccionDto, Inspeccion>()
+            .ForMember(dest => dest.Observaciones, opt => opt.Ignore()) // Ignorar observaciones del DTO
+            .ForMember(dest => dest.Fecha, opt => opt.Ignore()) // Se establece en el servicio
+            .ForMember(dest => dest.Estado, opt => opt.Ignore()) // Se establece en el servicio
+            .ForMember(dest => dest.FechaCreacion, opt => opt.Ignore()); // Se establece en el servicio
         CreateMap<Inspeccion, InspeccionListaDto>();
         CreateMap<PatchInspeccionDto, Inspeccion>()
+            .ForMember(dest => dest.Observaciones, opt => opt.Ignore()) // Ignorar observaciones del DTO
             .ForAllMembers(opt => opt.Condition((src, dest, srcMember) => srcMember != null));
 
         // Mapeos para la tabla "Observacion"
@@ -52,6 +55,13 @@ namespace ClaseEntityFramework.Mapping
         CreateMap<Evidencia, PatchEvidenciaDto>().ReverseMap();
         CreateMap<Evidencia, EvidenciaDto>();
         CreateMap<CreateEvidenciaDto, Evidencia>();
+        CreateMap<CreateEvidenciaInspeccionDto, Evidencia>()
+            .ForMember(dest => dest.ObservacionId, opt => opt.Ignore()) // Se asigna en el servicio
+            .ForMember(dest => dest.FechaRegistro, opt => opt.Ignore()); // Se establece en el servicio
+        CreateMap<PatchEvidenciaDto, Evidencia>()
+            .ForMember(dest => dest.ObservacionId, opt => opt.Ignore()) // Se asigna en el servicio
+            .ForMember(dest => dest.FechaRegistro, opt => opt.Ignore()) // Se establece en el servicio
+            .ForMember(dest => dest.TamañoBytes, opt => opt.Ignore()); // Se calcula automáticamente
 
         // Mapeos para la tabla "Categoria"
         CreateMap<Categoria, CategoriaDto>().ReverseMap();
@@ -68,10 +78,6 @@ namespace ClaseEntityFramework.Mapping
         CreateMap<CreateEstadoDto, Estado>();
         CreateMap<UpdateEstadoDto, Estado>();
 
-        // Mapeos para la tabla "Problema"
-        CreateMap<Problema, ProblemaDto>().ReverseMap();
-        CreateMap<CreateProblemaDto, Problema>();
-        CreateMap<UpdateProblemaDto, Problema>();
 
         // Mapeos para la tabla "Accion"
         CreateMap<Accion, AccionDto>().ReverseMap();
@@ -93,10 +99,6 @@ namespace ClaseEntityFramework.Mapping
         CreateMap<CreateSolucionDto, Solucion>();
         CreateMap<UpdateSolucionDto, Solucion>();
 
-        // Mapeos para la tabla "Sugerencia"
-        CreateMap<Sugerencia, SugerenciaDto>().ReverseMap();
-        CreateMap<CreateSugerenciaDto, Sugerencia>();
-        CreateMap<UpdateSugerenciaDto, Sugerencia>();
 
         // Mapeos para la tabla "Asignacion"
         CreateMap<Asignacion, AsignacionDto>().ReverseMap();

@@ -24,7 +24,6 @@ namespace ClaseEntityFramework.Services.Implementations
                 .Include(o => o.CriterioDeGravedad)
                 .Include(o => o.Categoria)
                 .Include(o => o.Estado)
-                .Include(o => o.Problema)
                 .Include(o => o.Responsable)
                 .Include(o => o.Inspeccion)
                     .ThenInclude(i => i.Area)
@@ -43,8 +42,6 @@ namespace ClaseEntityFramework.Services.Implementations
                 .Include(o => o.CriterioDeGravedad)
                 .Include(o => o.Categoria)
                 .Include(o => o.Estado)
-                .Include(o => o.Problema)
-                    .ThenInclude(p => p.Sugerencias)
                 .Include(o => o.Responsable)
                 .Include(o => o.Inspeccion)
                     .ThenInclude(i => i.Area)
@@ -125,7 +122,6 @@ namespace ClaseEntityFramework.Services.Implementations
                 .Include(o => o.CriterioDeGravedad)
                 .Include(o => o.Categoria)
                 .Include(o => o.Estado)
-                .Include(o => o.Problema)
                 .Include(o => o.Responsable)
                 .AsQueryable();
 
@@ -168,7 +164,6 @@ namespace ClaseEntityFramework.Services.Implementations
                 CriterioDeGravedadId = o.CriterioDeGravedadId,
                 CategoriaId = o.CategoriaId,
                 EstadoId = o.EstadoId,
-                ProblemaId = o.ProblemaId,
                 ResponsableId = o.ResponsableId,
                 CriterioDeGravedad = o.CriterioDeGravedad != null ? new CriterioDeGravedadReporteDto
                 {
@@ -187,11 +182,6 @@ namespace ClaseEntityFramework.Services.Implementations
                 {
                     Id = o.Estado.Id,
                     Nombre = o.Estado.Nombre
-                } : null,
-                Problema = o.Problema != null ? new ProblemaReporteDto
-                {
-                    Id = o.Problema.Id,
-                    Nombre = o.Problema.Nombre
                 } : null,
                 Responsable = o.Responsable != null ? new ResponsableReporteDto
                 {

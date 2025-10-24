@@ -22,10 +22,6 @@ namespace ClaseEntityFramework.DTOs.Observaciones
         public int EstadoId { get; set; }
         public string EstadoNombre { get; set; }
         
-        // Información del problema
-        public int ProblemaId { get; set; }
-        public string ProblemaNombre { get; set; }
-        public string ProblemaCodigo { get; set; }
         
         // Información de la inspección
         public int InspeccionId { get; set; }

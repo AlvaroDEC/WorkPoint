@@ -12,14 +12,12 @@ namespace ClaseEntityFramework.DTOs.Observaciones
         public int CriterioDeGravedadId { get; set; }
         public int CategoriaId { get; set; }
         public int EstadoId { get; set; }
-        public int ProblemaId { get; set; }
         public int ResponsableId { get; set; }
 
         // Relaciones incluidas
         public CriterioDeGravedadReporteDto CriterioDeGravedad { get; set; }
         public CategoriaObservacionReporteDto Categoria { get; set; }
         public EstadoObservacionReporteDto Estado { get; set; }
-        public ProblemaReporteDto Problema { get; set; }
         public ResponsableReporteDto Responsable { get; set; }
     }
 
@@ -53,14 +51,6 @@ namespace ClaseEntityFramework.DTOs.Observaciones
         public string Nombre { get; set; }
     }
 
-    /// <summary>
-    /// DTO para problema en reportes
-    /// </summary>
-    public class ProblemaReporteDto
-    {
-        public int Id { get; set; }
-        public string Nombre { get; set; }
-    }
 
     /// <summary>
     /// DTO para responsable en reportes

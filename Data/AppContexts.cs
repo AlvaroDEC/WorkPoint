@@ -23,8 +23,6 @@ namespace ClaseEntityFramework.Data
         public DbSet<Solucion> Soluciones { get; set; }
         public DbSet<Evidencia> Evidencias { get; set; }
         public DbSet<EvidenciaSolucion> EvidenciasSolucion { get; set; }
-        public DbSet<Problema> Problemas { get; set; }
-        public DbSet<Sugerencia> Sugerencias { get; set; }
         public DbSet<Accion> Acciones { get; set; }
         public DbSet<Permiso> Permisos { get; set; }
 

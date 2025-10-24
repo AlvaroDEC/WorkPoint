@@ -1,8 +1,6 @@
 using ClaseEntityFramework.DTOs.CriteriosDeGravedad;
 using ClaseEntityFramework.DTOs.Categorias;
 using ClaseEntityFramework.DTOs.Estados;
-using ClaseEntityFramework.DTOs.Problemas;
-using ClaseEntityFramework.DTOs.Sugerencias;
 using ClaseEntityFramework.DTOs.Inspecciones;
 using ClaseEntityFramework.DTOs.Usuarios;
 using ClaseEntityFramework.DTOs.Evidencias;
@@ -29,11 +27,6 @@ namespace ClaseEntityFramework.DTOs.Observaciones
         // Estado completo
         public EstadoDto Estado { get; set; }
         
-        // Problema completo
-        public ProblemaDto Problema { get; set; }
-        
-        // Sugerencias del problema
-        public List<SugerenciaDto> Sugerencias { get; set; }
         
         // Información de la inspección
         public InspeccionListaDto Inspeccion { get; set; }

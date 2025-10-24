@@ -1,11 +1,13 @@
 using ClaseEntityFramework.DTOs.Usuarios;
 using ClaseEntityFramework.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ClaseEntityFramework.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize] //  Requiere autenticación JWT
     public class UsuarioController : ControllerBase
     {
         private readonly IUsuarioService _usuarioService;

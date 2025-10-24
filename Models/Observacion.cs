@@ -26,10 +26,6 @@ namespace ClaseEntityFramework.Models
         public int EstadoId { get; set; }
         public Estado Estado { get; set; }
 
-        [Required]
-        [ForeignKey(nameof(Problema))]
-        public int ProblemaId { get; set; }
-        public Problema Problema { get; set; }
 
         [Column(TypeName = "timestamp with time zone")]
         public DateTime FechaCreacion { get; set; } = DateTime.UtcNow;

@@ -29,11 +29,6 @@ namespace ClaseEntityFramework.Constants
         public const string OBSERVACIONES_ELIMINAR = "OBSERVACIONES_ELIMINAR";
         public const string OBSERVACIONES_VER = "OBSERVACIONES_VER";
 
-        // Acciones de Problemas
-        public const string PROBLEMAS_CREAR = "PROBLEMAS_CREAR";
-        public const string PROBLEMAS_EDITAR = "PROBLEMAS_EDITAR";
-        public const string PROBLEMAS_ELIMINAR = "PROBLEMAS_ELIMINAR";
-        public const string PROBLEMAS_VER = "PROBLEMAS_VER";
 
         // Acciones de Soluciones
         public const string SOLUCIONES_CREAR = "SOLUCIONES_CREAR";
@@ -76,8 +71,6 @@ namespace ClaseEntityFramework.Constants
                 INSPECCIONES_CREAR, INSPECCIONES_EDITAR, INSPECCIONES_ELIMINAR, INSPECCIONES_VER,
                 // Observaciones
                 OBSERVACIONES_CREAR, OBSERVACIONES_EDITAR, OBSERVACIONES_ELIMINAR, OBSERVACIONES_VER,
-                // Problemas
-                PROBLEMAS_CREAR, PROBLEMAS_EDITAR, PROBLEMAS_ELIMINAR, PROBLEMAS_VER,
                 // Soluciones
                 SOLUCIONES_CREAR, SOLUCIONES_EDITAR, SOLUCIONES_ELIMINAR, SOLUCIONES_VER,
                 // Seguimientos

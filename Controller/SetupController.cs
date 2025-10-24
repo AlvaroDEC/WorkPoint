@@ -1,279 +1,200 @@
-using ClaseEntityFramework.Services.Interfaces;
-using ClaseEntityFramework.DTOs.Acciones;
-using ClaseEntityFramework.DTOs.Common;
-using ClaseEntityFramework.Constants;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using ClaseEntityFramework.Data;
+using Microsoft.EntityFrameworkCore;
+using ClaseEntityFramework.Models;
 
-namespace ClaseEntityFramework.Controller
+namespace ClaseEntityFramework.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize] // 🔒 Requiere autenticación JWT
     public class SetupController : ControllerBase
     {
-        private readonly IAccionService _accionService;
-        private readonly ILogger<SetupController> _logger;
+        private readonly AppContexts _context;
 
-        public SetupController(IAccionService accionService, ILogger<SetupController> logger)
+        public SetupController(AppContexts context)
         {
-            _accionService = accionService;
-            _logger = logger;
+            _context = context;
         }
 
-        /// <summary>
-        /// Inicializa todas las acciones atómicas del sistema
-        /// </summary>
-        [HttpPost("inicializar-acciones")]
-        public async Task<IActionResult> InicializarAcciones()
+        [HttpGet("check-data")]
+        public async Task<IActionResult> CheckData()
         {
             try
             {
-                _logger.LogInformation("Iniciando inicialización de acciones del sistema");
-                
-                var acciones = SystemActions.GetAllActions();
-                var accionesCreadas = new List<string>();
-                var accionesExistentes = new List<string>();
+                var usuarios = await _context.Usuarios.Select(u => new { u.Id, u.NombreCompleto, u.RolId }).ToListAsync();
+                var areas = await _context.Areas.Select(a => new { a.Id, a.Nombre }).ToListAsync();
+                var criterios = await _context.CriteriosDeGravedad.Select(c => new { c.Id, c.Codigo, c.Descripcion }).ToListAsync();
+                var estados = await _context.Estados.Select(e => new { e.Id, e.Nombre }).ToListAsync();
+                var categorias = await _context.Categorias.Select(c => new { c.Id, c.Nombre }).ToListAsync();
+                var roles = await _context.Roles.Select(r => new { r.Id, r.Nombre }).ToListAsync();
 
-                foreach (var nombreAccion in acciones)
+                return Ok(new
                 {
-                    try
+                    success = true,
+                    data = new
                     {
-                        var dto = new CreateAccionDto { Nombre = nombreAccion };
-                        await _accionService.CrearAccion(dto);
-                        accionesCreadas.Add(nombreAccion);
-                        _logger.LogDebug("Acción creada: {Accion}", nombreAccion);
+                        usuarios = usuarios,
+                        areas = areas,
+                        criterios = criterios,
+                        estados = estados,
+                        categorias = categorias,
+                        roles = roles
                     }
-                    catch (Exception ex)
-                    {
-                        accionesExistentes.Add(nombreAccion);
-                        _logger.LogWarning("Acción ya existe: {Accion}. Error: {Error}", nombreAccion, ex.Message);
-                    }
+                });
+            }
+            catch (Exception ex)
+            {
+                return Ok(new
+                {
+                    success = false,
+                    message = ex.Message,
+                    innerException = ex.InnerException?.Message
+                });
+            }
+        }
+
+        [HttpPost("create-test-data")]
+        public async Task<IActionResult> CreateTestData()
+        {
+            try
+            {
+                // Crear Rol si no existe
+                var rolAdmin = await _context.Roles.FirstOrDefaultAsync(r => r.Nombre == "Admin");
+                if (rolAdmin == null)
+                {
+                    rolAdmin = new ClaseEntityFramework.Models.Rol { Nombre = "Admin", Descripcion = "Administrador del sistema" };
+                    _context.Roles.Add(rolAdmin);
+                    await _context.SaveChangesAsync();
                 }
 
-                var result = new
+                // Crear Usuarios de prueba si no existen
+                var usuario1 = await _context.Usuarios.FirstOrDefaultAsync(u => u.Id == 1);
+                if (usuario1 == null)
                 {
-                    accionesCreadas,
-                    accionesExistentes,
-                    totalCreadas = accionesCreadas.Count,
-                    totalExistentes = accionesExistentes.Count
-                };
-
-                _logger.LogInformation("Inicialización completada. Creadas: {Creadas}, Existentes: {Existentes}", 
-                    accionesCreadas.Count, accionesExistentes.Count);
-
-                return Ok(ApiResponse<object>.SuccessResponse(result, "Inicialización de acciones atómicas completada"));
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error al inicializar acciones del sistema");
-                return BadRequest(ApiResponse.ErrorResponse(ex.Message, "Error al inicializar acciones"));
-            }
-        }
-
-        /// <summary>
-        /// Obtiene todas las acciones disponibles agrupadas por módulo
-        /// </summary>
-        [HttpGet("acciones-agrupadas")]
-        public async Task<IActionResult> ObtenerAccionesAgrupadas()
-        {
-            try
-            {
-                _logger.LogInformation("Obteniendo acciones agrupadas por módulo");
-                
-                var acciones = await _accionService.ObtenerAcciones();
-                
-                var accionesAgrupadas = acciones
-                    .GroupBy(a => ExtractModuleFromAction(a.Nombre))
-                    .Select(g => new
+                    usuario1 = new ClaseEntityFramework.Models.Usuario
                     {
-                        Modulo = g.Key,
-                        Acciones = g.Select(a => new
-                        {
-                            a.Id,
-                            a.Nombre,
-                            Operacion = ExtractOperationFromAction(a.Nombre)
-                        }).ToList()
-                    })
-                    .ToList();
-
-                var result = new
-                {
-                    modulos = accionesAgrupadas,
-                    totalAcciones = acciones.Count
-                };
-
-                _logger.LogInformation("Acciones agrupadas obtenidas: {Total} acciones en {Modulos} módulos", 
-                    acciones.Count, accionesAgrupadas.Count);
-
-                return Ok(ApiResponse<object>.SuccessResponse(result));
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error al obtener acciones agrupadas");
-                return BadRequest(ApiResponse.ErrorResponse(ex.Message, "Error al obtener acciones agrupadas"));
-            }
-        }
-
-        /// <summary>
-        /// Obtiene todas las acciones disponibles
-        /// </summary>
-        [HttpGet("acciones-disponibles")]
-        public async Task<IActionResult> ObtenerAccionesDisponibles()
-        {
-            try
-            {
-                _logger.LogInformation("Obteniendo todas las acciones disponibles");
-                
-                var acciones = await _accionService.ObtenerAcciones();
-                
-                var result = new
-                {
-                    acciones,
-                    total = acciones.Count
-                };
-
-                _logger.LogInformation("Acciones obtenidas: {Total} acciones", acciones.Count);
-                
-                return Ok(ApiResponse<object>.SuccessResponse(result));
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error al obtener acciones disponibles");
-                return BadRequest(ApiResponse.ErrorResponse(ex.Message, "Error al obtener acciones"));
-            }
-        }
-
-        /// <summary>
-        /// Limpia acciones duplicadas en la base de datos
-        /// </summary>
-        [HttpPost("limpiar-acciones-duplicadas")]
-        public async Task<IActionResult> LimpiarAccionesDuplicadas()
-        {
-            try
-            {
-                _logger.LogInformation("Iniciando limpieza de acciones duplicadas");
-                
-                var acciones = await _accionService.ObtenerAcciones();
-                
-                // Agrupar por nombre y eliminar duplicados
-                var accionesUnicas = acciones
-                    .GroupBy(a => a.Nombre)
-                    .Select(g => g.First())
-                    .ToList();
-
-                var duplicadosEliminados = acciones.Count - accionesUnicas.Count;
-                
-                if (duplicadosEliminados > 0)
-                {
-                    // Eliminar todas las acciones actuales
-                    await _accionService.EliminarTodasLasAcciones();
-                    
-                    // Recrear solo las acciones únicas
-                    var accionesRecreadas = new List<string>();
-                    foreach (var accion in accionesUnicas)
-                    {
-                        var dto = new CreateAccionDto { Nombre = accion.Nombre };
-                        await _accionService.CrearAccion(dto);
-                        accionesRecreadas.Add(accion.Nombre);
-                    }
-
-                    var result = new
-                    {
-                        accionesEliminadas = duplicadosEliminados,
-                        accionesRecreadas = accionesRecreadas.Count,
-                        acciones = accionesRecreadas
+                        NombreCompleto = "Usuario Admin",
+                        Correo = "admin@test.com",
+                        Contraseña = "password123",
+                        RolId = rolAdmin.Id,
+                        Estado = true
                     };
-
-                    _logger.LogInformation("Limpieza completada. Eliminados: {Eliminados}, Recreados: {Recreados}", 
-                        duplicadosEliminados, accionesRecreadas.Count);
-
-                    return Ok(ApiResponse<object>.SuccessResponse(result, "Acciones duplicadas eliminadas exitosamente"));
+                    _context.Usuarios.Add(usuario1);
+                    await _context.SaveChangesAsync();
                 }
-                else
-                {
-                    _logger.LogInformation("No se encontraron acciones duplicadas");
-                    return Ok(ApiResponse.SuccessResponse("No se encontraron acciones duplicadas"));
-                }
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error al limpiar acciones duplicadas");
-                return BadRequest(ApiResponse.ErrorResponse(ex.Message, "Error al limpiar acciones duplicadas"));
-            }
-        }
 
-        /// <summary>
-        /// Obtiene la matriz de permisos para un rol específico
-        /// </summary>
-        [HttpGet("matriz-permisos/{rolId}")]
-        public async Task<IActionResult> ObtenerMatrizPermisos(int rolId)
-        {
-            try
-            {
-                _logger.LogInformation("Obteniendo matriz de permisos para rol {RolId}", rolId);
-                
-                // TODO: Implementar obtención de matriz con flags por rol
-                // Por ahora retornamos un ejemplo
-                var matriz = new
+                var usuario3 = await _context.Usuarios.FirstOrDefaultAsync(u => u.Id == 3);
+                if (usuario3 == null)
                 {
-                    rolId,
-                    modulos = new[]
+                    usuario3 = new ClaseEntityFramework.Models.Usuario
                     {
-                        new
-                        {
-                            modulo = "USUARIOS",
-                            acciones = new[]
-                            {
-                                new { id = 1, nombre = SystemActions.USUARIOS_CREAR, asignado = true },
-                                new { id = 2, nombre = SystemActions.USUARIOS_EDITAR, asignado = false },
-                                new { id = 3, nombre = SystemActions.USUARIOS_ELIMINAR, asignado = true },
-                                new { id = 4, nombre = SystemActions.USUARIOS_VER, asignado = true }
-                            }
-                        },
-                        new
-                        {
-                            modulo = "ROLES",
-                            acciones = new[]
-                            {
-                                new { id = 5, nombre = SystemActions.ROLES_CREAR, asignado = false },
-                                new { id = 6, nombre = SystemActions.ROLES_EDITAR, asignado = true },
-                                new { id = 7, nombre = SystemActions.ROLES_ELIMINAR, asignado = false },
-                                new { id = 8, nombre = SystemActions.ROLES_VER, asignado = true }
-                            }
-                        }
-                    }
-                };
+                        NombreCompleto = "Auditor Test",
+                        Correo = "auditor@test.com",
+                        Contraseña = "password123",
+                        RolId = rolAdmin.Id,
+                        Estado = true
+                    };
+                    _context.Usuarios.Add(usuario3);
+                    await _context.SaveChangesAsync();
+                }
 
-                _logger.LogInformation("Matriz de permisos obtenida para rol {RolId}", rolId);
-                
-                return Ok(ApiResponse<object>.SuccessResponse(matriz));
+                var usuario5 = await _context.Usuarios.FirstOrDefaultAsync(u => u.Id == 5);
+                if (usuario5 == null)
+                {
+                    usuario5 = new ClaseEntityFramework.Models.Usuario
+                    {
+                        NombreCompleto = "Responsable Test",
+                        Correo = "responsable@test.com",
+                        Contraseña = "password123",
+                        RolId = rolAdmin.Id,
+                        Estado = true
+                    };
+                    _context.Usuarios.Add(usuario5);
+                    await _context.SaveChangesAsync();
+                }
+
+                // Crear Área si no existe
+                var area1 = await _context.Areas.FirstOrDefaultAsync(a => a.Id == 1);
+                if (area1 == null)
+                {
+                    area1 = new ClaseEntityFramework.Models.Area
+                    {
+                        Nombre = "Área Test",
+                        Codigo = "AT001",
+                        Descripcion = "Área de prueba",
+                        Estado = true
+                    };
+                    _context.Areas.Add(area1);
+                    await _context.SaveChangesAsync();
+                }
+
+                // Crear Criterio de Gravedad si no existe
+                var criterio1 = await _context.CriteriosDeGravedad.FirstOrDefaultAsync(c => c.Id == 1);
+                if (criterio1 == null)
+                {
+                    criterio1 = new ClaseEntityFramework.Models.CriterioDeGravedad
+                    {
+                        Codigo = "BAJO",
+                        Descripcion = "Criterio de gravedad bajo"
+                    };
+                    _context.CriteriosDeGravedad.Add(criterio1);
+                    await _context.SaveChangesAsync();
+                }
+
+                // Crear Categoría si no existe
+                var categoria1 = await _context.Categorias.FirstOrDefaultAsync(c => c.Id == 1);
+                if (categoria1 == null)
+                {
+                    categoria1 = new ClaseEntityFramework.Models.Categoria
+                    {
+                        Nombre = "Categoría Test",
+                        Descripcion = "Categoría de prueba"
+                    };
+                    _context.Categorias.Add(categoria1);
+                    await _context.SaveChangesAsync();
+                }
+
+                // Crear Estado si no existe
+                var estado1 = await _context.Estados.FirstOrDefaultAsync(e => e.Id == 1);
+                if (estado1 == null)
+                {
+                    estado1 = new ClaseEntityFramework.Models.Estado
+                    {
+                        Nombre = "Pendiente",
+                        Descripcion = "Estado pendiente"
+                    };
+                    _context.Estados.Add(estado1);
+                    await _context.SaveChangesAsync();
+                }
+
+
+                return Ok(new
+                {
+                    success = true,
+                    message = "Datos de prueba creados exitosamente",
+                    data = new
+                    {
+                        usuario1Id = usuario1.Id,
+                        usuario3Id = usuario3.Id,
+                        usuario5Id = usuario5.Id,
+                        area1Id = area1.Id,
+                        criterio1Id = criterio1.Id,
+                        categoria1Id = categoria1.Id,
+                        estado1Id = estado1.Id
+                    }
+                });
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error al obtener matriz de permisos para rol {RolId}", rolId);
-                return BadRequest(ApiResponse.ErrorResponse(ex.Message, "Error al obtener matriz de permisos"));
+                return Ok(new
+                {
+                    success = false,
+                    message = ex.Message,
+                    innerException = ex.InnerException?.Message
+                });
             }
         }
-
-        #region Private Helper Methods
-
-        /// <summary>
-        /// Extrae el módulo de una acción (parte antes del guión bajo)
-        /// </summary>
-        private static string ExtractModuleFromAction(string actionName)
-        {
-            var parts = actionName.Split('_');
-            return parts.Length > 0 ? parts[0] : actionName;
-        }
-
-        /// <summary>
-        /// Extrae la operación de una acción (parte después del guión bajo)
-        /// </summary>
-        private static string ExtractOperationFromAction(string actionName)
-        {
-            var parts = actionName.Split('_');
-            return parts.Length > 1 ? parts[1] : actionName;
-        }
-
-        #endregion
     }
 }

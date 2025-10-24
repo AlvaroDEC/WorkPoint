@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using ClaseEntityFramework.DTOs.Inspecciones;
 using ClaseEntityFramework.DTOs.Common;
 using ClaseEntityFramework.Services.Interfaces;
@@ -7,6 +8,7 @@ namespace ClaseEntityFramework.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize] // 🔒 Requiere autenticación JWT
     public class InspeccionController : ControllerBase
     {
         private readonly IInspeccionService _inspeccionService;

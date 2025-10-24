@@ -20,8 +20,6 @@ namespace ClaseEntityFramework.DTOs.Observaciones
         [Required(ErrorMessage = "El ID del estado es obligatorio")]
         public int EstadoId { get; set; }
 
-        [Required(ErrorMessage = "El ID del problema es obligatorio")]
-        public int ProblemaId { get; set; }
 
         [Required(ErrorMessage = "El ID de la inspección es obligatorio")]
         public int InspeccionId { get; set; }

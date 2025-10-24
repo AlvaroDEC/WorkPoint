@@ -9,7 +9,7 @@ namespace ClaseEntityFramework.DTOs.Auth
         public string Correo { get; set; }
 
         [Required(ErrorMessage = "La contraseña es requerida")]
-        [StringLength(100, MinimumLength = 6, ErrorMessage = "La contraseña debe tener entre 6 y 100 caracteres")]
+        [StringLength(100, MinimumLength = 1, ErrorMessage = "La contraseña debe tener entre 1 y 100 caracteres")]
         public string Contraseña { get; set; }
     }
 }

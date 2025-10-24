@@ -45,6 +45,7 @@ namespace ClaseEntityFramework.Services.Implementations
                 {
                     Descripcion = obsDto.Descripcion,
                     CriterioDeGravedadId = obsDto.CriterioDeGravedadId,
+                    CategoriaId = obsDto.CategoriaId,
                     EstadoId = estadoPendiente.Id,
                     FechaCreacion = DateTime.UtcNow,
                     InspeccionId = inspeccion.Id,
@@ -62,7 +63,7 @@ namespace ClaseEntityFramework.Services.Implementations
                         {
                             ArchivoBase64 = ev.ArchivoBase64,
                             TipoArchivo = ev.TipoArchivo,
-                            TamañoBytes = ClaseEntityFramework.Helpers.Base64Helper.CalcularTamañoBytes(ev.ArchivoBase64),
+                            TamañoBytes = ev.TamañoBytes > 0 ? ev.TamañoBytes : ClaseEntityFramework.Helpers.Base64Helper.CalcularTamañoBytes(ev.ArchivoBase64),
                             FechaRegistro = DateTime.UtcNow,
                             ObservacionId = observacion.Id
                         };
@@ -135,8 +136,15 @@ namespace ClaseEntityFramework.Services.Implementations
             if (inspeccion == null)
                 throw new Exception("Inspección no encontrada");
 
-            // Actualiza campos principales usando AutoMapper con configuración de patch
-            _mapper.Map(dto, inspeccion);
+            // Actualiza campos principales manualmente (sin AutoMapper para evitar problemas)
+            if (dto.AreaId.HasValue)
+                inspeccion.AreaId = dto.AreaId.Value;
+            
+            if (dto.AuditorId.HasValue)
+                inspeccion.AuditorId = dto.AuditorId.Value;
+                
+            if (!string.IsNullOrEmpty(dto.Estado))
+                inspeccion.Estado = dto.Estado;
             
             // Asegurar que la fecha sea UTC si se proporciona
             if (dto.Fecha.HasValue)

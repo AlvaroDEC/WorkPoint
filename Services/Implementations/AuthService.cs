@@ -12,11 +12,13 @@ namespace ClaseEntityFramework.Services.Implementations
     {
         private readonly AppContexts _context;
         private readonly IMapper _mapper;
+        private readonly IJwtService _jwtService;
 
-        public AuthService(AppContexts context, IMapper mapper)
+        public AuthService(AppContexts context, IMapper mapper, IJwtService jwtService)
         {
             _context = context;
             _mapper = mapper;
+            _jwtService = jwtService;
         }
 
         public async Task<LoginResponseDto> LoginAsync(LoginDto loginDto)
@@ -37,11 +39,17 @@ namespace ClaseEntityFramework.Services.Implementations
             var usuarioDto = _mapper.Map<UsuarioDto>(usuario);
             usuarioDto.RolNombre = usuario.Rol?.Nombre;
 
+            // Generar token JWT
+            var token = _jwtService.GenerarToken(usuario);
+            var expiresAt = _jwtService.ObtenerFechaExpiracion();
+
             return new LoginResponseDto
             {
                 Success = true,
+                Token = token,
                 Usuario = usuarioDto,
-                Mensaje = "Login exitoso"
+                Mensaje = "Login exitoso",
+                ExpiresAt = expiresAt
             };
         }
 

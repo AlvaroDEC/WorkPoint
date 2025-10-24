@@ -4,6 +4,9 @@ using ClaseEntityFramework.Services.Interfaces;
 using ClaseEntityFramework.Middleware;
 using ClaseEntityFramework.Mapping;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,10 +32,8 @@ builder.Services.AddScoped<IRolService, RolService>();
 builder.Services.AddScoped<IObservacionService, ObservacionService>();
 builder.Services.AddScoped<ICategoriaService, CategoriaService>();
 builder.Services.AddScoped<IEstadoService, EstadoService>();
-builder.Services.AddScoped<IProblemaService, ProblemaService>();
 builder.Services.AddScoped<IAccionService, AccionService>();
 builder.Services.AddScoped<ISolucionService, SolucionService>();
-builder.Services.AddScoped<ISugerenciaService, SugerenciaService>();
 builder.Services.AddScoped<IAsignacionService, AsignacionService>();
 builder.Services.AddScoped<IAsignacionRolesService, AsignacionRolesService>();
 builder.Services.AddScoped<ISeguimientoService, SeguimientoService>();
@@ -40,6 +41,7 @@ builder.Services.AddScoped<IPermisoService, PermisoService>();
 builder.Services.AddScoped<IEvidenciaSolucionService, EvidenciaSolucionService>();
 builder.Services.AddScoped<IEvidenciaService, EvidenciaService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppContexts>(Options => {
@@ -51,6 +53,34 @@ builder.Services.AddDbContext<AppContexts>(Options => {
 });
 
 builder.Services.AddAutoMapper(typeof(MappingProfile));
+
+// 🔑 Configurar autenticación JWT
+var jwtSettings = builder.Configuration.GetSection("Jwt");
+var key = Encoding.UTF8.GetBytes(jwtSettings["Key"]);
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.RequireHttpsMetadata = false; // Para desarrollo
+    options.SaveToken = true;
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = jwtSettings["Issuer"],
+        ValidAudience = jwtSettings["Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(key),
+        ClockSkew = TimeSpan.Zero // Sin margen de tiempo adicional
+    };
+});
+
+builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
@@ -67,6 +97,10 @@ app.UseHttpsRedirection();
 
 // Usar CORS antes de mapear los controladores
 app.UseCors("AllowFrontend");
+
+// 🔑 Middleware de autenticación y autorización (en este orden)
+app.UseAuthentication();
+app.UseAuthorization();
 
 // Usar middleware global de manejo de errores
 app.UseMiddleware<GlobalExceptionMiddleware>();

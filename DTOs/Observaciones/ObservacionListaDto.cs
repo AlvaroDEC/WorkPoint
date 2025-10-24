@@ -13,7 +13,6 @@ namespace ClaseEntityFramework.DTOs.Observaciones
         public string CriterioCodigo { get; set; }
         public string CategoriaNombre { get; set; }
         public string EstadoNombre { get; set; }
-        public string ProblemaNombre { get; set; }
         
         // Información del responsable
         public string ResponsableNombre { get; set; }
