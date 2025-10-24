@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AlvarO-DEC\\Desktop\\ADM-BACK\\WorkPoint\\WorkPoint.csproj": {}
+    "C:\\Users\\usuario\\Desktop\\BACK-BPM\\WorkPoint\\WorkPoint.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AlvarO-DEC\\Desktop\\ADM-BACK\\WorkPoint\\WorkPoint.csproj": {
+    "C:\\Users\\usuario\\Desktop\\BACK-BPM\\WorkPoint\\WorkPoint.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AlvarO-DEC\\Desktop\\ADM-BACK\\WorkPoint\\WorkPoint.csproj",
+        "projectUniqueName": "C:\\Users\\usuario\\Desktop\\BACK-BPM\\WorkPoint\\WorkPoint.csproj",
         "projectName": "WorkPoint",
-        "projectPath": "C:\\Users\\AlvarO-DEC\\Desktop\\ADM-BACK\\WorkPoint\\WorkPoint.csproj",
-        "packagesPath": "C:\\Users\\AlvarO-DEC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AlvarO-DEC\\Desktop\\ADM-BACK\\WorkPoint\\obj\\",
+        "projectPath": "C:\\Users\\usuario\\Desktop\\BACK-BPM\\WorkPoint\\WorkPoint.csproj",
+        "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\usuario\\Desktop\\BACK-BPM\\WorkPoint\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\AlvarO-DEC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -109,7 +109,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

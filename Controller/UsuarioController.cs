@@ -93,5 +93,61 @@ namespace ClaseEntityFramework.Controllers
                 return NotFound(new { mensaje = ex.Message });
             }
         }
+
+        [HttpDelete("{id}")]
+        [ProducesResponseType(typeof(object), 200)]
+        [ProducesResponseType(typeof(object), 400)]
+        [ProducesResponseType(401)]
+        public async Task<IActionResult> EliminarUsuario(int id)
+        {
+            if (id <= 0)
+            {
+                return BadRequest(new { success = false, message = "El ID debe ser mayor que 0" });
+            }
+
+            try
+            {
+                await _usuarioService.EliminarUsuarioAsync(id);
+                return Ok(new { 
+                    success = true, 
+                    message = "Usuario eliminado correctamente" 
+                });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { 
+                    success = false, 
+                    message = ex.Message 
+                });
+            }
+        }
+
+        [HttpDelete("{id}/forzado")]
+        [ProducesResponseType(typeof(object), 200)]
+        [ProducesResponseType(typeof(object), 400)]
+        [ProducesResponseType(401)]
+        public async Task<IActionResult> EliminarUsuarioForzado(int id)
+        {
+            if (id <= 0)
+            {
+                return BadRequest(new { success = false, message = "El ID debe ser mayor que 0" });
+            }
+
+            try
+            {
+                await _usuarioService.EliminarUsuarioForzadoAsync(id);
+                return Ok(new { 
+                    success = true, 
+                    message = "Usuario eliminado físicamente (forzado)" 
+                });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { 
+                    success = false, 
+                    message = ex.Message 
+                });
+            }
+        }
     }
 }

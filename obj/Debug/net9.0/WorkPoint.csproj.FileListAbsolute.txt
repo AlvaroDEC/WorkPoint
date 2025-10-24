@@ -416,3 +416,11 @@ C:\Users\AlvarO-DEC\Desktop\ADM-BACK\WorkPoint\bin\Debug\net9.0\Microsoft.Identi
 C:\Users\AlvarO-DEC\Desktop\ADM-BACK\WorkPoint\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\AlvarO-DEC\Desktop\ADM-BACK\WorkPoint\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\AlvarO-DEC\Desktop\ADM-BACK\WorkPoint\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\usuario\Desktop\BACK-BPM\WorkPoint\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\usuario\Desktop\BACK-BPM\WorkPoint\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\usuario\Desktop\BACK-BPM\WorkPoint\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\usuario\Desktop\BACK-BPM\WorkPoint\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\usuario\Desktop\BACK-BPM\WorkPoint\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\usuario\Desktop\BACK-BPM\WorkPoint\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\usuario\Desktop\BACK-BPM\WorkPoint\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\usuario\Desktop\BACK-BPM\WorkPoint\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll

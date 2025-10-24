@@ -75,5 +75,44 @@ namespace ClaseEntityFramework.Services.Implementations
             var usuarioDto = _mapper.Map<UsuarioDto>(usuario);
             return usuarioDto;
         }
+
+        public async Task EliminarUsuarioAsync(int id)
+        {
+            var usuario = await _context.Usuarios.FindAsync(id);
+            if (usuario == null)
+                throw new Exception("Usuario no encontrado");
+
+            // Verificar si el usuario tiene relaciones que impidan la eliminación
+            var tieneInspecciones = await _context.Inspecciones.AnyAsync(i => i.AuditorId == id);
+            var tieneObservaciones = await _context.Observaciones.AnyAsync(o => o.ResponsableId == id);
+            var tieneSoluciones = await _context.Soluciones.AnyAsync(s => s.ResponsableId == id);
+            var tieneSeguimientos = await _context.Seguimientos.AnyAsync(s => s.UsuarioId == id);
+
+            if (tieneInspecciones || tieneObservaciones || tieneSoluciones || tieneSeguimientos)
+            {
+                // Soft delete: cambiar estado a false en lugar de eliminar físicamente
+                usuario.Estado = false;
+                await _context.SaveChangesAsync();
+                throw new Exception("Usuario desactivado (soft delete) porque tiene relaciones. Para eliminación física, primero elimine las relaciones.");
+            }
+            else
+            {
+                // Hard delete: eliminar físicamente si no tiene relaciones
+                _context.Usuarios.Remove(usuario);
+                await _context.SaveChangesAsync();
+            }
+        }
+
+        // ⚠️ MÉTODO PELIGROSO - Solo para testing
+        public async Task EliminarUsuarioForzadoAsync(int id)
+        {
+            var usuario = await _context.Usuarios.FindAsync(id);
+            if (usuario == null)
+                throw new Exception("Usuario no encontrado");
+
+            // ⚠️ ELIMINACIÓN FORZADA - Puede romper relaciones
+            _context.Usuarios.Remove(usuario);
+            await _context.SaveChangesAsync();
+        }
     }
 }

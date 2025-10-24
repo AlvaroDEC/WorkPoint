@@ -8,6 +8,7 @@ namespace ClaseEntityFramework.Services.Interfaces
         Task<List<UsuarioDto>> ObtenerUsuariosAsync();
         Task<UsuarioDto> ActualizarParcialmenteUsuarioAsync(int id, UpdateUsuarioDto dto);
         Task<UsuarioDto> ObtenerUsuarioPorIdAsync(int id);
-
+        Task EliminarUsuarioAsync(int id);
+        Task EliminarUsuarioForzadoAsync(int id); // ⚠️ Solo para testing
     }
 }
