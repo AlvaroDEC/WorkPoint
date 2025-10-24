@@ -168,10 +168,8 @@ namespace ClaseEntityFramework.Services.Implementations
                 CriterioDeGravedad = o.CriterioDeGravedad != null ? new CriterioDeGravedadReporteDto
                 {
                     Id = o.CriterioDeGravedad.Id,
-                    Nivel = o.CriterioDeGravedad.Nivel,
                     Codigo = o.CriterioDeGravedad.Codigo,
-                    Descripcion = o.CriterioDeGravedad.Descripcion,
-                    Color = o.CriterioDeGravedad.Color
+                    Descripcion = o.CriterioDeGravedad.Descripcion
                 } : null,
                 Categoria = o.Categoria != null ? new CategoriaObservacionReporteDto
                 {

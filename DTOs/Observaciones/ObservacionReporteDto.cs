@@ -27,10 +27,8 @@ namespace ClaseEntityFramework.DTOs.Observaciones
     public class CriterioDeGravedadReporteDto
     {
         public int Id { get; set; }
-        public int Nivel { get; set; }
         public string Codigo { get; set; }
         public string Descripcion { get; set; }
-        public string Color { get; set; }
     }
 
     /// <summary>

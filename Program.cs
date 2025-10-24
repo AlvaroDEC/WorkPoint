@@ -123,8 +123,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseStaticFiles();
-
 app.UseHttpsRedirection();
 
 // Usar CORS antes de mapear los controladores
